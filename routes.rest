@@ -1,2 +1,8 @@
+###
 GET http://localhost:8080/contacts
-# the request above returns a json object with all professional data for Nathan Birch. No database is connected.
+###
+GET http://localhost:8080/contacts/63c0ff6b2bb3e64f92f3d998
+###
+GET http://localhost:8080/contacts/63c0ff6b2bb3e64f92f3d999
+###
+GET http://localhost:8080/contacts/63c0ff6b2bb3e64f92f3d99a
