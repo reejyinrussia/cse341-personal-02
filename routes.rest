@@ -8,23 +8,66 @@ GET http://localhost:8080/contacts/63c0ff6b2bb3e64f92f3d999
 ###
 GET http://localhost:8080/contacts/63c0ff6b2bb3e64f92f3d99a
 
-### Create contact TODO write function for Post
+### Create contact
 POST http://localhost:8080/contacts HTTP/1.1
 Content-Type: application/json
 
 {
-  "firstName": "BJ",
-  "lastName": "Pierce",
-  "email": "bj@test.com",
+  "firstName": "John",
+  "lastName": "McClain",
+  "email": "jmcclain@test.com",
   "favoriteColor": "Red",
-  "birthday": "2/20/52"
+  "birthday": "5/6/73"
 }
 
-### DELETE contact
+### PUT contact
+PUT http://localhost:8080/contacts/63c0ff6b2bb3e64f92f3d998 HTTP/1.1
+Content-Type: application/json
 
-### PROD
+{
+  "_id": "63c0ff6b2bb3e64f92f3d998",
+  "firstName": "Jack",
+  "lastName": "Handy",
+  "email": "jackhandy@test.com",
+  "favoriteColor": "Blue",
+  "birthday": "1/1/75"
+}
+### DELETE contact
+DELETE http://localhost:8080/contacts/63c6394ebc0400ed8e29a341
+
+
+### PRODUCTION
+
 ### Get all contacts
 GET https://week-02-personal.onrender.com/contacts
 
 ### Get single contact
 GET https://week-02-personal.onrender.com/contacts/63c0ff6b2bb3e64f92f3d999
+
+### Create Contact
+POST https://week-02-personal.onrender.com/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "McClain",
+  "email": "jmcclain@test.com",
+  "favoriteColor": "Red",
+  "birthday": "5/6/73"
+}
+
+### PUT Contact
+PUT https://week-02-personal.onrender.com/contacts/63c0ff6b2bb3e64f92f3d99a HTTP/1.1
+Content-Type: application/json
+
+{
+  "_id": "63c0ff6b2bb3e64f92f3d998",
+  "firstName": "Jack",
+  "lastName": "Handy",
+  "email": "jackhandy@test.com",
+  "favoriteColor": "Blue",
+  "birthday": "1/1/75"
+}
+
+### DELETE contact
+DELETE https://week-02-personal.onrender.com/contacts/63c0ff6b2bb3e64f92f3d999 HTTP/1.1
